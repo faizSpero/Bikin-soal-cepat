@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikin Soal Cepat - Generator Soal Guru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              purple: {
+                50: '#F5F3FF',
+                100: '#EDE9FE',
+                200: '#DDD6FE',
+                300: '#C4B5FD',
+                400: '#7B68EE', // MediumSlateBlue (Requested)
+                500: '#6A5ACD', // SlateBlue (Requested - Primary)
+                600: '#6A5ACD', // SlateBlue (Requested)
+                700: '#5A4DBE', // Slightly darker variant of #6A5ACD
+                800: '#4B3E9F', // Darker
+                900: '#2A2452', 
+              },
+              indigo: {
+                50: '#F5F3FF',
+                100: '#EDE9FE',
+                200: '#DDD6FE',
+                300: '#C4B5FD',
+                400: '#7B68EE', // MediumSlateBlue (Requested)
+                500: '#6A5ACD', // SlateBlue (Requested - Primary)
+                600: '#6A5ACD', // SlateBlue (Requested)
+                700: '#5A4DBE', 
+                800: '#4B3E9F',
+                900: '#2A2452',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        .print-only {
+          display: block !important;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+          border: none;
+        }
+        body {
+          background: white;
+        }
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6A5ACD; /* SlateBlue (Requested) for scrollbar hover */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.454.0?deps=react@18.3.1",
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@18.3.1/jsx-dev-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1?deps=react@18.3.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "mammoth": "https://esm.sh/mammoth@1.8.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
